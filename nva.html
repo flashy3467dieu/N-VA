@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="site_title">N-VA - Site Officiel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-orange-600 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-home text-white text-2xl mr-2"></i>
+                    <a href="#" class="text-white text-xl font-bold">N-VA</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#accueil" class="text-white hover:text-yellow-200" data-translate="nav_home">Accueil</a>
+                        <a href="#programme" class="text-white hover:text-yellow-200" data-translate="nav_program">Programme</a>
+                        <a href="#membres" class="text-white hover:text-yellow-200" data-translate="nav_members">Membres</a>
+                    </div>
+                    <div>
+                        <select id="language-selector" class="bg-orange-700 text-white p-2 rounded focus:outline-none">
+                            <option value="fr" selected>Français</option>
+                            <option value="nl">Nederlands</option>
+                        </select>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="bg-orange-500 py-20">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl font-bold mb-4" data-translate="welcome_title">Bienvenue sur le site de la N-VA</h1>
+            <p class="text-xl mb-8" data-translate="welcome_subtitle">Nouvelle Alliance Flamande - Pour une Flandre forte et unie</p>
+            <a href="#programme" class="bg-white text-orange-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200" data-translate="discover_program">Découvrir notre programme</a>
+        </div>
+    </section>
+
+    <!-- Section Programme -->
+    <section id="programme" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-translate="program_title">Notre Programme Politique</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_economy">Économie</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_economy_desc">Promotion d'une économie ouverte et innovante, soutien aux PME flamandes.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_economy_item1">Réduction des impôts sur le travail</li>
+                        <li data-translate="program_economy_item2">Investissements en R&D</li>
+                        <li data-translate="program_economy_item3">Libre-échange européen</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_environment">Environnement</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_environment_desc">Transition écologique responsable et durable.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_environment_item1">Énergies renouvelables</li>
+                        <li data-translate="program_environment_item2">Protection de la nature flamande</li>
+                        <li data-translate="program_environment_item3">Mobilité verte</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_education">Éducation</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_education_desc">Un enseignement de qualité pour tous.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_education_item1">Autonomie des écoles</li>
+                        <li data-translate="program_education_item2">Apprentissage des langues</li>
+                        <li data-translate="program_education_item3">Formation professionnelle</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_health">Santé</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_health_desc">Soins accessibles et efficaces.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_health_item1">Prévention prioritaire</li>
+                        <li data-translate="program_health_item2">Digitalisation des soins</li>
+                        <li data-translate="program_health_item3">Soutien aux aînés</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_security">Sécurité</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_security_desc">Une Flandre sûre pour tous.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_security_item1">Renforcement de la police locale</li>
+                        <li data-translate="program_security_item2">Lutte contre la criminalité</li>
+                        <li data-translate="program_security_item3">Intégration sociale</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="program_europe">Europe</h3>
+                    <p class="text-gray-600 mb-4" data-translate="program_europe_desc">Une Europe des régions fortes.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li data-translate="program_europe_item1">Réforme des institutions UE</li>
+                        <li data-translate="program_europe_item2">Coopération transfrontalière</li>
+                        <li data-translate="program_europe_item3">Défense commune</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Membres -->
+    <section id="membres" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-translate="members_title">Nos Membres Clés</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150x150?text=flashy3467" alt="flashy3467" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">flashy3467</h3>
+                    <p class="text-gray-600" data-translate="member_president">Président de la N-VA</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150x150?text=Ollie" alt="Ollie" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Ollie</h3>
+                    <p class="text-gray-600" data-translate="member_minister">Secrétaire général de N-VA</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150x150?text=Mj" alt="Mj" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Mj</h3>
+                    <p class="text-gray-600" data-translate="member_vice_president">Secrétaire général de N-VA</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://discord.gg/sFSUhFJrBW" class="bg-orange-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-700" data-translate="become_member">Devenir membre</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p data-translate="footer_copyright">&copy; 2025 flashy3467. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Translation dictionary
+        const translations = {
+            fr: {
+                site_title: "N-VA - Site Officiel",
+                nav_home: "Accueil",
+                nav_program: "Programme",
+                nav_members: "Membres",
+                welcome_title: "Bienvenue sur le site de la N-VA",
+                welcome_subtitle: "Nouvelle Alliance Flamande - Pour une Flandre forte et unie",
+                discover_program: "Découvrir notre programme",
+                program_title: "Notre Programme Politique",
+                program_economy: "Économie",
+                program_economy_desc: "Promotion d'une économie ouverte et innovante, soutien aux PME flamandes.",
+                program_economy_item1: "Réduction des impôts sur le travail",
+                program_economy_item2: "Investissements en R&D",
+                program_economy_item3: "Libre-échange européen",
+                program_environment: "Environnement",
+                program_environment_desc: "Transition écologique responsable et durable.",
+                program_environment_item1: "Énergies renouvelables",
+                program_environment_item2: "Protection de la nature flamande",
+                program_environment_item3: "Mobilité verte",
+                program_education: "Éducation",
+                program_education_desc: "Un enseignement de qualité pour tous.",
+                program_education_item1: "Autonomie des écoles",
+                program_education_item2: "Apprentissage des langues",
+                program_education_item3: "Formation professionnelle",
+                program_health: "Santé",
+                program_health_desc: "Soins accessibles et efficaces.",
+                program_health_item1: "Prévention prioritaire",
+                program_health_item2: "Digitalisation des soins",
+                program_health_item3: "Soutien aux aînés",
+                program_security: "Sécurité",
+                program_security_desc: "Une Flandre sûre pour tous.",
+                program_security_item1: "Renforcement de la police locale",
+                program_security_item2: "Lutte contre la criminalité",
+                program_security_item3: "Intégration sociale",
+                program_europe: "Europe",
+                program_europe_desc: "Une Europe des régions fortes.",
+                program_europe_item1: "Réforme des institutions UE",
+                program_europe_item2: "Coopération transfrontalière",
+                program_europe_item3: "Défense commune",
+                members_title: "Nos Membres Clés",
+                member_president: "Président de la N-VA",
+                member_minister: "Secrétaire général de N-VA",
+                member_vice_president: "Secrétaire général de N-VA",
+                become_member: "Devenir membre",
+                footer_copyright: "© 2025 flashy3467. Tous droits réservés."
+            },
+            nl: {
+                site_title: "N-VA - Officiële Website",
+                nav_home: "Home",
+                nav_program: "Programma",
+                nav_members: "Leden",
+                welcome_title: "Welkom op de website van de N-VA",
+                welcome_subtitle: "Nieuw-Vlaamse Alliantie - Voor een sterk en verenigd Vlaanderen",
+                discover_program: "Ons programma ontdekken",
+                program_title: "Ons Politiek Programma",
+                program_economy: "Economie",
+                program_economy_desc: "Bevordering van een open en innovatieve economie, ondersteuning van Vlaamse KMO's.",
+                program_economy_item1: "Verlaging van belastingen op arbeid",
+                program_economy_item2: "Investeringen in R&D",
+                program_economy_item3: "Europese vrijhandel",
+                program_environment: "Milieu",
+                program_environment_desc: "Verantwoordelijke en duurzame ecologische transitie.",
+                program_environment_item1: "Hernieuwbare energie",
+                program_environment_item2: "Bescherming van de Vlaamse natuur",
+                program_environment_item3: "Groene mobiliteit",
+                program_education: "Onderwijs",
+                program_education_desc: "Kwaliteitsonderwijs voor iedereen.",
+                program_education_item1: "Autonomie voor scholen",
+                program_education_item2: "Talenonderwijs",
+                program_education_item3: "Beroepsopleiding",
+                program_health: "Gezondheid",
+                program_health_desc: "Toegankelijke en efficiënte zorg.",
+                program_health_item1: "Prioriteit voor preventie",
+                program_health_item2: "Digitalisering van de zorg",
+                program_health_item3: "Ondersteuning voor ouderen",
+                program_security: "Veiligheid",
+                program_security_desc: "Een veilig Vlaanderen voor iedereen.",
+                program_security_item1: "Versterking van de lokale politie",
+                program_security_item2: "Bestrijding van criminaliteit",
+                program_security_item3: "Sociale integratie",
+                program_europe: "Europa",
+                program_europe_desc: "Een Europa van sterke regio's.",
+                program_europe_item1: "Hervorming van EU-instellingen",
+                program_europe_item2: "Grensoverschrijdende samenwerking",
+                program_europe_item3: "Gemeenschappelijke defensie",
+                members_title: "Onze Sleutelleden",
+                member_president: "Voorzitter van de N-VA",
+                member_minister: "Secretaris-generaal van N-VA",
+                member_vice_president: "Secretaris-generaal van N-VA",
+                become_member: "Lid worden",
+                footer_copyright: "© 2025 flashy3467. Alle rechten voorbehouden."
+            }
+        };
+
+        // Function to update text content based on language
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            // Update title
+            document.querySelector('title').textContent = translations[lang].site_title;
+            // Update html lang attribute
+            document.documentElement.setAttribute('lang', lang);
+        }
+
+        // Initialize with default language (French)
+        updateLanguage('fr');
+
+        // Simple mobile menu toggle
+        document.querySelector('.md\\:hidden button').addEventListener('click', function() {
+            // Toggle mobile menu - placeholder for full implementation
+            alert('Menu mobile ouvert');
+        });
+
+        // Language selector functionality
+        document.getElementById('language-selector').addEventListener('change', function() {
+            const lang = this.value;
+            updateLanguage(lang);
+        });
+    </script>
+</body>
+</html>
